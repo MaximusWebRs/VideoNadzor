@@ -23,7 +23,7 @@ function sendMail(event) {
         event.preventDefault();
         return;
     }
-    emailjs.send("service_elektro", "template_elektro", params).then(
+    emailjs.send("service_videofeed", "template_elektro", params).then(
         (response) => {
             Cookies.set("form-sent", "sent", { expires: 1 });
             formElement.reset();
